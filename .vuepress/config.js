@@ -3,6 +3,7 @@ module.exports = {
     description: 'Notes in learning iOS',
     base: '/Learning-iOS/',
     themeConfig: {
+        sidebarDepth: 2,
         repo: 'chuxubank/Learning-iOS',
         editLinks: true,
         nav: [
@@ -26,6 +27,7 @@ module.exports = {
             }
         ],
         sidebar: {
+            
             '/Developing-iOS-11-Apps-with-Swift/': [
                 'L1-Introduction-to-iOS11-Xcode9-Swift4/'
             ]
