@@ -1,21 +1,5 @@
 # Introduction to iOS 11, Xcode 9 and Swift 4
 
-<style>
-.selfadapting-video {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 56%;
-}
-.selfadapting-video iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-}  
-</style>
-
 ## Welcome to Developing iOS 11 Apps with Swift
 
 Check out Apple's iOS Dev Center and learn more about Swift. Before you begin, you must know object-oriented programming and have prior programming experience. If you are new to object-oriented programming or are looking for a refresher course to brush up on your skills, [Programming Abstractions](https://itunes.apple.com/us/course/programming-abstractions/id495054099) and [Programming Paradigms](https://itunes.apple.com/us/course/programming-paradigms/id495054064) will help.
@@ -36,9 +20,8 @@ Topics Include: iOS 11 Overview, Core OS, Core Services, Media, Cocoa Touch, Pla
 Note: English subtitles are available within the video: enable English CC subtitles.
 
 ✅ Watch the first lecture video.
-<div class="selfadapting-video">
-  <iframe width="100%" src="https://www.youtube.com/embed/71pyOB4TPRE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+
+[Lecture 1: Introduction to iOS 11, Xcode 9 and Swift 4](https://youtu.be/71pyOB4TPRE?list=PLPA-ayBrweUzGFmkT_W65z64MoGnKRZMq)
 
 ✅ Review Lecture 1 Slides.
 
@@ -143,10 +126,7 @@ Note: English subtitles are available within the video: enable English CC subtit
     > `UIViewController` knows everything about controlling a UI.
     
     > Put all our instance variables and methods inside those curly braces.
-  - Connecting UI elements to invoke methods in our Swift code (actions)
-    <div class="selfadapting-video">
-      <iframe name="ife" width="100%" height="300" src="https://www.youtube.com/embed/71pyOB4TPRE?start=1793" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+  - Connecting UI elements to invoke methods in our Swift code (actions) [29:54](https://youtu.be/71pyOB4TPRE?list=PLPA-ayBrweUzGFmkT_W65z64MoGnKRZMq&t=1794)
   - print (outputting to the console using `\()` notation)
   - Connecting properties (instance variables) from our Swift code to the UI (outlets) 
   - Accessing iOS documentation from our code
@@ -156,4 +136,4 @@ Note: English subtitles are available within the video: enable English CC subtit
 
 ✅ Complete the first reading.
 
-  [Reading 1 Intro to Swift](Reading-1-Intro-to-Swift.pdf)
+  [Reading 1: Intro to Swift](Reading-1-Intro-to-Swift.pdf)
