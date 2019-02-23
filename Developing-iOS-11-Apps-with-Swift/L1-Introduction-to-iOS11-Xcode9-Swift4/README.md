@@ -1,3 +1,19 @@
+<style>
+.selfadapting-video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56%;
+}
+.selfadapting-video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}  
+</style>
+
 # Introduction to iOS 11, Xcode 9 and Swift 4
 
 ## Welcome to Developing iOS 11 Apps with Swift
@@ -20,8 +36,9 @@ Topics Include: iOS 11 Overview, Core OS, Core Services, Media, Cocoa Touch, Pla
 Note: English subtitles are available within the video: enable English CC subtitles.
 
 ✅ Watch the first lecture video.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/71pyOB4TPRE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="selfadapting-video">
+  <iframe width="100%" src="https://www.youtube.com/embed/71pyOB4TPRE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ✅ Review Lecture 1 Slides.
 
@@ -117,8 +134,19 @@ Note: English subtitles are available within the video: enable English CC subtit
 - Concentration Game
 - Today’s topics in the demo ...
   - Creating a Project in Xcode 9, including building a UI and running in the iOS Simulator
+    ::: tip
+    How to open `Object Library` in Xcode 10?
+
+        Shift-Command-L Show Library.
+    :::
   - Subclassing in Swift, including how to specify instance variables and methods
+    > `UIViewController` knows everything about controlling a UI.
+    
+    > Put all our instance variables and methods inside those curly braces.
   - Connecting UI elements to invoke methods in our Swift code (actions)
+    <div class="selfadapting-video">
+      <iframe name="ife" width="100%" height="300" src="https://www.youtube.com/embed/71pyOB4TPRE?start=1793" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
   - print (outputting to the console using `\()` notation)
   - Connecting properties (instance variables) from our Swift code to the UI (outlets) 
   - Accessing iOS documentation from our code

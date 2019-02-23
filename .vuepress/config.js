@@ -34,7 +34,8 @@ module.exports = {
         }
     },
     plugins: [
-        '@vuepress/back-to-top'
+        '@vuepress/back-to-top',
+        '@vuepress/last-updated'
     ],
     markdown: {
         extendMarkdown: md => {
