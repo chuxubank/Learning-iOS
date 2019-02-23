@@ -79,3 +79,6 @@ iOSInjectionProject/
 
 # node
 node_modules/
+
+# vuepress
+dist/
