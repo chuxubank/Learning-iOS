@@ -1,3 +1,5 @@
+# Introduction to iOS 11, Xcode 9 and Swift 4
+
 <style>
 .selfadapting-video {
   position: relative;
@@ -13,8 +15,6 @@
   top: 0;
 }  
 </style>
-
-# Introduction to iOS 11, Xcode 9 and Swift 4
 
 ## Welcome to Developing iOS 11 Apps with Swift
 
