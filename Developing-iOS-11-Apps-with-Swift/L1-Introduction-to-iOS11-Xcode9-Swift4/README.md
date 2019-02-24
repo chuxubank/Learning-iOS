@@ -46,55 +46,14 @@ Note: English subtitles are available within the video: enable English CC subtit
   - CS106A&B (or X) <u>required</u> & CS107 or CS108 or CS110 also (at a minimum) <u>required</u>. (or equivalent for non-Stanford undergrads)
 
 #### What’s in iOS?
-1. Core OS (Buttom layer -> Hardware)
-    - OSX Kernel 
-    - Mach 3.0 
-    - BSD 
-    - Sockets 
-    - Security
-    - Power Management 
-    - Keychain Access 
-    - Certificates
-    - File System 
-    - Bonjour
+> iOS is Unix
 
-    > iOS is Unix
-
-2. Core Services
-    - Collections 
-    - Address Book 
-    - Networking 
-    - File Access 
-    - SQLite
-    - Core Location 
-    - NetServices 
-    - Threading 
-    - Preferences 
-    - URL Utilities
-
-3. Media
-    - Core Audio 
-    - OpenAL
-    - Audio Mixing 
-    - Audio Recording 
-    - Video Playback
-    - JPEG, PNG, TIFF 
-    - PDF
-    - Quartz (2D) 
-    - Core Animation 
-    - OpenGL ES
-
-4. Cocoa Touch (Top layer -> User)
-    - Multi-Touch 
-    - Core Motion 
-    - View Hierarchy 
-    - Localization 
-    - Controls
-    - Alerts
-    - Web View 
-    - Map Kit 
-    - Image Picker 
-    - Camera
+| Layer         | Component                                                                                                                      |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Core OS       | OSX Kernel, Mach 3.0, BSD, Sockets, Security, Power Management, Keychain Access, Certificates, File System, Bonjour            |
+| Core Services | Collections, Address Book, Networking, File Access, SQLite, Core Location, NetServices, Threading, Preferences, URL Utilities  |
+| Media         | Core Audio, OpenAL, Audio Mixing, Audio Recording, Video Playback,JPEG, PNG, TIFF, PDF, Quartz (2D), Core Animation, OpenGL ES |
+| Cocoa Touch   | Multi-Touch, Core Motion, View Hierarchy, Localization, Controls, Alerts, Web View, Map Kit, Image Picker, Camera              |
 
 #### Platform Components
 - Tools
