@@ -25,7 +25,7 @@ Note: English subtitles are available within the video: enable English CC subtit
 
 ✅ Review Lecture 1 Slides.
 
-  [Lecture 1 Slides](Lecture-1-Slides.pdf)
+  [Lecture 1 Slides](https://github.com/chuxubank/Learning-iOS/blob/master/Developing-iOS-11-Apps-with-Swift/L1-Introduction-to-iOS11-Xcode9-Swift4/Lecture-1-Slides.pdf)
 
 ### What is this class all about?
 - How to build cool apps
@@ -136,4 +136,4 @@ Note: English subtitles are available within the video: enable English CC subtit
 
 ✅ Complete the first reading.
 
-  [Reading 1: Intro to Swift](Reading-1-Intro-to-Swift.pdf)
+  [Reading 1: Intro to Swift](https://github.com/chuxubank/Learning-iOS/blob/master/Developing-iOS-11-Apps-with-Swift/L1-Introduction-to-iOS11-Xcode9-Swift4/Reading-1-Intro-to-Swift.pdf)

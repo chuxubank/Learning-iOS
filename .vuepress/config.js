@@ -27,7 +27,6 @@ module.exports = {
             }
         ],
         sidebar: {
-            
             '/Developing-iOS-11-Apps-with-Swift/': [
                 'L1-Introduction-to-iOS11-Xcode9-Swift4/'
             ]
