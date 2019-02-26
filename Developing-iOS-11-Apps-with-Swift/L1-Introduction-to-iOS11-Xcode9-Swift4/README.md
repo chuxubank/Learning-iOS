@@ -74,99 +74,119 @@ Note: English subtitles are available within the video: enable English CC subtit
 
 #### Demo
 - Concentration Game
+  
+  All this stuff can be very abstract until you see it in action.
+
+  We’ll start getting comfortable with Swift 4 and Xcode 9 by building something right away. Two part demo starting today, finishing on Wednesday.
+
 - Today’s topics in the demo ...
-  - Creating a Project in Xcode 9, including building a UI and running in the iOS Simulator
-    ::: tip
-    How to open `Object Library` in Xcode 10?
-    
-    <kbd>Shift-Command-L</kbd>
-    :::
-  - Subclassing in Swift, including how to specify instance variables and methods
-    > `UIViewController` knows everything about controlling a UI.
-    
-    > Put all our instance variables and methods inside those curly braces.
-  - Connecting UI elements to invoke *methods* in our Swift code (actions) [29:54](https://youtu.be/71pyOB4TPRE?list=PLPA-ayBrweUzGFmkT_W65z64MoGnKRZMq&t=1794)
-    ::: tip
-    Two things about Swift that are different from other languages:
-      1. Every argument has a name that you actually include when you call the method.
-         - Each parameter would have a name in front of it.
-      2. Every argument has two names.
-         - External name (caller use)
-         - Internal name (inside)
 
-    How to pick good names: 
-      [API Design Guidelines](https://swift.org/documentation/api-design-guidelines/)
-      > The No.1 requirement: **Read like English**
-    :::
-  - print (outputting to the console using `\()` notation)
-    ``` swift
-    print("filpCard(withEmoji: \(emoji))")
-    ```
-  - Connecting *properties* (instance variables) from our Swift code to the UI (outlets) 
-    ::: warning
-    All properties have to be initialized.
-      - Initializer
-      - `= 0`
-    ``` swift
-    var flipCount: INT = 0
-    ```
-    :::
-    ::: tip
-    Swift is an extremely strongly typed language, and has strong type inference.
-    ``` swift
-    var flipCount = 0
-    ```
-    :::
-  - Accessing iOS documentation from our code
-    
-    Hold <kbd>Option</kbd> and click the code.
-  - Automatically doing something every time a property’s value changes
-    
-    Property observer: to keep the UI with in sync with the instance variables of our class
-    ``` swift {2,3,4}
-    var flipCount = 0 {
-        didSet {
-            flipCountLabel.text = "Flips: \(flipCount)"
-        }
+**Creating a Project in Xcode 9, including building a UI and running in the iOS Simulator**
+::: tip
+How to open `Object Library` in Xcode 10?
+
+<kbd>Shift-Command-L</kbd>
+:::
+
+
+**Subclassing in Swift, including how to specify instance variables and methods**
+> `UIViewController` knows everything about controlling a UI.
+
+> Put all our instance variables and methods inside those curly braces.
+
+**Connecting UI elements to invoke *methods* in our Swift code (actions)** [29:54](https://youtu.be/71pyOB4TPRE?list=PLPA-ayBrweUzGFmkT_W65z64MoGnKRZMq&t=1794)
+::: tip
+Two things about Swift that are different from other languages:
+  1. Every argument has a name that you actually include when you call the method.
+      - Each parameter would have a name in front of it.
+  2. Every argument has two names.
+      - External name (caller use)
+      - Internal name (inside)
+
+How to pick good names: 
+  [API Design Guidelines](https://swift.org/documentation/api-design-guidelines/)
+  > The No.1 requirement: **Read like English**
+:::
+**print (outputting to the console using `\()` notation)**
+``` swift
+print("filpCard(withEmoji: \(emoji))")
+```
+
+**Connecting *properties* (instance variables) from our Swift code to the UI (outlets)**
+::: warning
+All properties have to be initialized.
+  - Initializer
+  - `= 0`
+``` swift
+var flipCount: INT = 0
+```
+:::
+::: tip
+Swift is an extremely strongly typed language, and has strong type inference.
+``` swift
+var flipCount = 0
+```
+:::
+**Accessing iOS documentation from our code**
+
+Hold <kbd>Option</kbd> and click the code.
+
+**Automatically doing something every time a property’s value changes**
+
+Property observer: to keep the UI with in sync with the instance variables of our class
+``` swift {2,3,4}
+var flipCount = 0 {
+    didSet {
+        flipCountLabel.text = "Flips: \(flipCount)"
     }
-    ```
+}
+```
 
-  - Array
-    
-    <kbd>Control</kbd> & drag & choose `Outlet Collection`
-    ``` swift
-    @IBOutlet var cardButtons: [UIButton]!
-    ```
-  - Constant
-    ``` swift
-    let cardNumber = cardButtons.index(of: sender)
-    ```
-    let card number equal card buttons' index of the sender
-  - Optionals
-    
-    - Optional `?` is a type that has two and only two states **set** and **not set**.
-    - Enumeration
-      - for each case of an enumeration you can have *associated data*
-      - if an optional is not set: `nil`
-    - Get the associated value:
-      - `!`
-        ``` swift
-        let cardNumber = cardButtons.index(of: sender)!
-        ```
-        Assume this optional is set and grab the associated value.
-        ::: danger
-        fatal error: unexpectedly found nil while unwrapping an Optional value
-        :::
-        > Don't be afraid of crashes. -- crashing your program can be really good because it makes you find problems
-      - `if`
-        ``` swift
-        if let cardNumber = cardButtons.index(of: sender) {
-			...
-		} else {
-			print("choosen card was not in cardButtons")
-		}
-        ```
+**Array**
+
+<kbd>Control</kbd> & drag & choose `Outlet Collection`
+``` swift
+@IBOutlet var cardButtons: [UIButton]!
+```
+**Constant**
+``` swift
+let cardNumber = cardButtons.index(of: sender)
+```
+> let card number equal card buttons' index of the sender
+
+**Optionals**
+
+`Optional` `?` is a type that has two and only two states **set** and **not set**.
+
+For each case of an `Enumeration` you can have *associated data*.
+
+If an optional is not set: `nil`
+
+To get the associated value:
+- Use `!`
+
+``` swift
+let cardNumber = cardButtons.index(of: sender)!
+```
+
+Assume this optional is set and grab the associated value.
+
+::: danger
+fatal error: unexpectedly found nil while unwrapping an Optional value
+:::
+
+> Don't be afraid of crashes. -- crashing your program can be really good because it makes you find problems
+
+- Use `if`
+
+``` swift
+if let cardNumber = cardButtons.index(of: sender) {
+    ...
+} else {
+    print("choosen card was not in cardButtons")
+}
+```
 
 ### ✅ Complete the first reading.
 
-  [Reading 1: Intro to Swift](https://github.com/chuxubank/Learning-iOS/blob/master/Developing-iOS-11-Apps-with-Swift/L1-Introduction-to-iOS11-Xcode9-Swift4/Reading-1-Intro-to-Swift.pdf)
+[Reading 1: Intro to Swift](https://github.com/chuxubank/Learning-iOS/blob/master/Developing-iOS-11-Apps-with-Swift/L1-Introduction-to-iOS11-Xcode9-Swift4/Reading-1-Intro-to-Swift.pdf)
