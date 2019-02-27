@@ -1,0 +1,6 @@
+[submodule "Developing-iOS-11-Apps-with-Swift/L1-Introduction-to-iOS11-Xcode9-Swift4/Lecture-1-Introduction-to-iOS11-XCode9-and-Swift4"]
+	path = Developing-iOS-11-Apps-with-Swift/L1-Introduction-to-iOS11-Xcode9-Swift4/Lecture-1-Introduction-to-iOS11-XCode9-and-Swift4
+	url = https://github.com/MichelDeiman/CS193P-iOS11-Lecture-1-Introduction-to-iOS11-XCode9-and-Swift4.git
+[submodule "Developing-iOS-11-Apps-with-Swift/L2-MVC-iOS-Xcode-Swift-Demonstration/Lecture-2-MVCs"]
+	path = Developing-iOS-11-Apps-with-Swift/L2-MVC-iOS-Xcode-Swift-Demonstration/Lecture-2-MVCs
+	url = https://github.com/MichelDeiman/CS193P-iOS11-Lecture-2-MVCs.git

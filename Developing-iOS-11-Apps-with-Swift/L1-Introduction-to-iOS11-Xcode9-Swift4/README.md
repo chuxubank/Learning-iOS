@@ -25,7 +25,7 @@ Note: English subtitles are available within the video: enable English CC subtit
 
 ### ✅ Review Lecture 1 Slides.
 
-  [Lecture 1 Slides](https://github.com/chuxubank/Learning-iOS/blob/master/Developing-iOS-11-Apps-with-Swift/L1-Introduction-to-iOS11-Xcode9-Swift4/Lecture-1-Slides.pdf)
+[Lecture 1 Slides](https://github.com/chuxubank/Learning-iOS/blob/master/Developing-iOS-11-Apps-with-Swift/L1-Introduction-to-iOS11-Xcode9-Swift4/Lecture-1-Slides.pdf)
 
 #### What is this class all about?
 - How to build cool apps
@@ -46,7 +46,7 @@ Note: English subtitles are available within the video: enable English CC subtit
   - CS106A&B (or X) <u>required</u> & CS107 or CS108 or CS110 also (at a minimum) <u>required</u>. (or equivalent for non-Stanford undergrads)
 
 #### What’s in iOS?
-> iOS is Unix
+> iOS is Unix.
 
 | Layer         | Component                                                                                                                      |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -82,37 +82,40 @@ Note: English subtitles are available within the video: enable English CC subtit
 - Today’s topics in the demo ...
 
 **Creating a Project in Xcode 9, including building a UI and running in the iOS Simulator**
+
 ::: tip
-How to open `Object Library` in Xcode 10?
-
-<kbd>Shift-Command-L</kbd>
+Use <kbd>Shift-Command-L</kbd> to open `Object Library` in Xcode 10.
 :::
-
 
 **Subclassing in Swift, including how to specify instance variables and methods**
-> `UIViewController` knows everything about controlling a UI.
 
-> Put all our instance variables and methods inside those curly braces.
+`UIViewController` knows everything about controlling a UI.
+
+Put all our instance variables and methods inside those curly braces.
 
 **Connecting UI elements to invoke *methods* in our Swift code (actions)** [29:54](https://youtu.be/71pyOB4TPRE?list=PLPA-ayBrweUzGFmkT_W65z64MoGnKRZMq&t=1794)
-::: tip
-Two things about Swift that are different from other languages:
-  1. Every argument has a name that you actually include when you call the method.
-      - Each parameter would have a name in front of it.
-  2. Every argument has two names.
-      - External name (caller use)
-      - Internal name (inside)
 
-How to pick good names: 
-  [API Design Guidelines](https://swift.org/documentation/api-design-guidelines/)
-  > The No.1 requirement: **Read like English**
+Two things about Swift that are different from other languages:
+1. Every argument has a name that you actually include when you call the method.
+   - Each parameter would have a name in front of it.
+2. Every argument has two names.
+   - External name (caller use)
+   - Internal name (inside)
+
+Pick good names: [API Design Guidelines - Naming](https://swift.org/documentation/api-design-guidelines/#naming)
+
+::: tip
+The No.1 requirement: **Read like English**
 :::
+
 **print (outputting to the console using `\()` notation)**
+
 ``` swift
 print("filpCard(withEmoji: \(emoji))")
 ```
 
 **Connecting *properties* (instance variables) from our Swift code to the UI (outlets)**
+
 ::: warning
 All properties have to be initialized.
   - Initializer
@@ -121,12 +124,14 @@ All properties have to be initialized.
 var flipCount: INT = 0
 ```
 :::
+
 ::: tip
 Swift is an extremely strongly typed language, and has strong type inference.
 ``` swift
 var flipCount = 0
 ```
 :::
+
 **Accessing iOS documentation from our code**
 
 Hold <kbd>Option</kbd> and click the code.
