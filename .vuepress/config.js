@@ -33,6 +33,9 @@ module.exports = {
         '@vuepress/last-updated'
     ],
     markdown: {
+        toc: {
+            includeLevel: [3, 4, 5]
+        },
         extendMarkdown: md => {
             md.use(require('markdown-it-checkbox'))
             md.use(require('markdown-it-plantuml'))

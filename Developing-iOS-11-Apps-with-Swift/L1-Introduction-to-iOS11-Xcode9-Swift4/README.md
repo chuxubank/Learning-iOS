@@ -1,5 +1,7 @@
 # Introduction to iOS 11, Xcode 9 and Swift 4
 
+[[toc]]
+
 ## Welcome to Developing iOS 11 Apps with Swift
 
 Check out Apple's iOS Dev Center and learn more about Swift. Before you begin, you must know object-oriented programming and have prior programming experience. If you are new to object-oriented programming or are looking for a refresher course to brush up on your skills, [Programming Abstractions](https://itunes.apple.com/us/course/programming-abstractions/id495054099) and [Programming Paradigms](https://itunes.apple.com/us/course/programming-paradigms/id495054064) will help.
@@ -81,19 +83,19 @@ Note: English subtitles are available within the video: enable English CC subtit
 
 - Today’s topics in the demo ...
 
-**Creating a Project in Xcode 9, including building a UI and running in the iOS Simulator**
+##### Creating a Project in Xcode 9, including building a UI and running in the iOS Simulator
 
 ::: tip
 Use <kbd>Shift-Command-L</kbd> to open `Object Library` in Xcode 10.
 :::
 
-**Subclassing in Swift, including how to specify instance variables and methods**
+##### Subclassing in Swift, including how to specify instance variables and methods
 
 `UIViewController` knows everything about controlling a UI.
 
 Put all our instance variables and methods inside those curly braces.
 
-**Connecting UI elements to invoke *methods* in our Swift code (actions)** [29:54](https://youtu.be/71pyOB4TPRE?list=PLPA-ayBrweUzGFmkT_W65z64MoGnKRZMq&t=1794)
+##### Connecting UI elements to invoke *methods* in our Swift code (actions) [29:54](https://youtu.be/71pyOB4TPRE?list=PLPA-ayBrweUzGFmkT_W65z64MoGnKRZMq&t=1794)
 
 Two things about Swift that are different from other languages:
 1. Every argument has a name that you actually include when you call the method.
@@ -108,13 +110,13 @@ Pick good names: [API Design Guidelines - Naming](https://swift.org/documentatio
 The No.1 requirement: **Read like English**
 :::
 
-**print (outputting to the console using `\()` notation)**
+##### print (outputting to the console using `\()` notation)
 
 ``` swift
 print("filpCard(withEmoji: \(emoji))")
 ```
 
-**Connecting *properties* (instance variables) from our Swift code to the UI (outlets)**
+##### Connecting *properties* (instance variables) from our Swift code to the UI (outlets)
 
 ::: warning
 All properties have to be initialized.
@@ -132,11 +134,11 @@ var flipCount = 0
 ```
 :::
 
-**Accessing iOS documentation from our code**
+##### Accessing iOS documentation from our code
 
 Hold <kbd>Option</kbd> and click the code.
 
-**Automatically doing something every time a property’s value changes**
+##### Automatically doing something every time a property’s value changes
 
 Property observer: to keep the UI with in sync with the instance variables of our class
 ``` swift {2,3,4}
@@ -147,19 +149,24 @@ var flipCount = 0 {
 }
 ```
 
-**Array**
+##### Array
 
 <kbd>Control</kbd> & drag & choose `Outlet Collection`
 ``` swift
 @IBOutlet var cardButtons: [UIButton]!
 ```
-**Constant**
+##### Constant
 ``` swift
 let cardNumber = cardButtons.index(of: sender)
 ```
 > let card number equal card buttons' index of the sender
 
-**Optionals**
+::: tip
+`let`: Constant
+`var`: Variable
+:::
+
+##### Optionals
 
 `Optional` `?` is a type that has two and only two states **set** and **not set**.
 
