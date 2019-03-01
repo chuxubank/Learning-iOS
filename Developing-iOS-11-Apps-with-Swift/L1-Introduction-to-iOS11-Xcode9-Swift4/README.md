@@ -25,6 +25,10 @@ Note: English subtitles are available within the video: enable English CC subtit
 
 [Lecture 1: Introduction to iOS 11, Xcode 9 and Swift 4](https://youtu.be/71pyOB4TPRE?list=PLPA-ayBrweUzGFmkT_W65z64MoGnKRZMq)
 
+<video width="100%" controls preload>
+    <source src="https://applehosted.podcasts.apple.com/stanford/media/1_Introduction_to_iOS_11_Xcode_9_and_Swift_4_311-6554896743492737986-01_9_25_17_1080p_CS193p_1080p_3mb_cc.m4v" />
+</video>
+
 ### ✅ Review Lecture 1 Slides.
 
 [Lecture 1 Slides](https://github.com/chuxubank/Learning-iOS/blob/master/Developing-iOS-11-Apps-with-Swift/L1-Introduction-to-iOS11-Xcode9-Swift4/Lecture-1-Slides.pdf)

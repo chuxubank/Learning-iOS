@@ -12,6 +12,10 @@ Note: English subtitles are available within the video: enable English CC subtit
 ### ✅ Watch the second lecture video.
 [Lecture 2: MVC's](https://youtu.be/w7a79cx3UaY?list=PLPA-ayBrweUzGFmkT_W65z64MoGnKRZMq)
 
+<video width="100%" controls preload>
+  <source src="https://applehosted.podcasts.apple.com/stanford/media/2_MVC_309-2503760600607007728-02_9_27_17_CS193p_720p_3mb_cc.m4v" />
+</video>
+
 ### ✅ Review Lecture 2 Slides.
 [Lecture 2 Slides](https://github.com/chuxubank/Learning-iOS/blob/master/Developing-iOS-11-Apps-with-Swift/L2-MVC-iOS-Xcode-Swift-Demonstration/Lecture-2-Slides.pdf)
 
@@ -188,3 +192,61 @@ let randomIndex = Int(arc4random_uniform(UInt32(emojiChoices.count - 1)))
 Jason Riggs talks about debugging and shares Xcode tips and tricks.
 
 ### ✅ Watch the first Friday Session video.
+
+[Friday Session 1: Debugging and Xcode Tips and Tricks](https://youtu.be/-UtIg4Lt7T8?list=PLPA-ayBrweUzGFmkT_W65z64MoGnKRZMq)
+
+<video width="100%" controls preload>
+    <source src="https://applehosted.podcasts.apple.com/stanford/media/504-8815564797834236275-Friday_01_9_29_17_WIP02_CS193p_1080p_3mb_cc.m4v" /> 
+    <!-- <track src="/Learning-iOS/subtitles/Friday Session 1. Debugging and Xcode Tips and Tricks.vtt" kind="subtitles" srclang="zh" label="部分翻译" /> -->
+</video> 
+
+#### A whirlwind tour of Xcode
+
+    Cmd R               Run
+    Cmd 0               Left-most panel
+    Cmd 1-9             Switch tabs in L panel
+    Cmd Option 0        Right-most panel
+    Cmd Option 1,2      Switch tabs in R panel
+    Cmd Shift y         Toggle the console
+    
+    Cmd Option Enter    Assistant editor
+    Cmd Enter           Main editor
+
+    Cmd Shift O     Open
+
+    Ctrl I          Indent
+
+::: tip 
+Xcode -> Preferences -> Navigation -> Navigation -> Uses Focused Editor
+:::
+
+::: tip 
+``` swift
+// MARK:
+// TODO:
+```
+:::
+
+#### How to use the debugger within Xcode
+- UI related
+- Breakpoint
+  - Exception Breakpoint
+  - LLDB
+    - `po`: pring object
+    - `p` : pring
+- Navigation options
+  - Continue
+  - Step over
+  - Step into
+
+::: tip
+Xcode -> Preferences -> Behaviors
+:::
+
+#### What actually the Xcode file itself contains
+- Build Settings
+  - Version of programming language
+- Build Phases
+  - Where you see all the source files that used inside app
+  - Link Binary with Libraries
+    - MapKit Framework
