@@ -99,7 +99,9 @@ Use <kbd>Shift-Command-L</kbd> to open `Object Library` in Xcode 10.
 
 Put all our instance variables and methods inside those curly braces.
 
-##### Connecting UI elements to invoke *methods* in our Swift code (actions) [29:54](https://youtu.be/71pyOB4TPRE?list=PLPA-ayBrweUzGFmkT_W65z64MoGnKRZMq&t=1794)
+##### Connecting UI elements to invoke *methods* in our Swift code (actions) 
+
+[29:54](https://youtu.be/71pyOB4TPRE?list=PLPA-ayBrweUzGFmkT_W65z64MoGnKRZMq&t=1794)
 
 Two things about Swift that are different from other languages:
 1. Every argument has a name that you actually include when you call the method.
