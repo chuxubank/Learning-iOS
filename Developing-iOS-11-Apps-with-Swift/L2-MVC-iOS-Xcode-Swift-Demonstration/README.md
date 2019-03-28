@@ -1,8 +1,7 @@
 # MVC; iOS, Xcode and Swift Demonstration
 
-[[toc]]
-
 ## MVC
+
 Paul Hegarty explains the Model-View-Controller (MVC) concept. He then continues the Concentration demo: demonstrating the application of MVC to the Concentration Game. 
 
 Topics Include: MVC, controller, view, model, target, action, outlet, initialization, struct, class, static methods and properties, UIStackView
@@ -10,6 +9,7 @@ Topics Include: MVC, controller, view, model, target, action, outlet, initializa
 Note: English subtitles are available within the video: enable English CC subtitles.
 
 ### ✅ Watch the second lecture video.
+
 [Lecture 2: MVC's](https://youtu.be/w7a79cx3UaY?list=PLPA-ayBrweUzGFmkT_W65z64MoGnKRZMq)
 
 <video width="100%" controls preload>
@@ -17,6 +17,7 @@ Note: English subtitles are available within the video: enable English CC subtit
 </video>
 
 ### ✅ Review Lecture 2 Slides.
+
 [Lecture 2 Slides](https://github.com/chuxubank/Learning-iOS/blob/master/Developing-iOS-11-Apps-with-Swift/L2-MVC-iOS-Xcode-Swift-Demonstration/Lecture-2-Slides.pdf)
 
 #### MVC
@@ -70,6 +71,7 @@ KVO: Key Value Observing
 Most apps have tons of screens which means mutiple MVCs, when one MVC wants to interact with another MVC(s), it always treats those other MVCs as part of its view.
 
 #### Demo
+
 Concentration continued ...
 
 ##### MVC
