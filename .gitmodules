@@ -10,3 +10,6 @@
 [submodule "Developing-iOS-11-Apps-with-Swift/L3-Swift-Overview/Lecture-4-More-Swift"]
 	path = Developing-iOS-11-Apps-with-Swift/L3-Swift-Overview/Lecture-4-More-Swift
 	url = https://github.com/MichelDeiman/CS193P-iOS11-Lecture-4-More-Swift.git
+[submodule "Developing-iOS-11-Apps-with-Swift/L4-Drawing-in-iOS/Lecture-5-Drawing"]
+	path = Developing-iOS-11-Apps-with-Swift/L4-Drawing-in-iOS/Lecture-5-Drawing
+	url = https://github.com/MichelDeiman/CS193P-iOS11-Lecture-5-Drawing.git
