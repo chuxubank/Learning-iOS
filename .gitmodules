@@ -7,3 +7,6 @@
 [submodule "Developing-iOS-11-Apps-with-Swift/L3-Swift-Overview/Lecture-3-Swift-Programming-Language"]
 	path = Developing-iOS-11-Apps-with-Swift/L3-Swift-Overview/Lecture-3-Swift-Programming-Language
 	url = https://github.com/MichelDeiman/CS193P-iOS11-Lecture-3---Swift-Programming-Language.git
+[submodule "Developing-iOS-11-Apps-with-Swift/L3-Swift-Overview/Lecture-4-More-Swift"]
+	path = Developing-iOS-11-Apps-with-Swift/L3-Swift-Overview/Lecture-4-More-Swift
+	url = https://github.com/MichelDeiman/CS193P-iOS11-Lecture-4-More-Swift.git
