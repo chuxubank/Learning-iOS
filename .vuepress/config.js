@@ -36,7 +36,7 @@ module.exports = {
 	],
 	markdown: {
 		toc: {
-			includeLevel: [3, 4, 5]
+			includeLevel: [2, 3, 4, 5]
 		},
 		extendMarkdown: md => {
 			md.use(require('markdown-it-checkbox'))

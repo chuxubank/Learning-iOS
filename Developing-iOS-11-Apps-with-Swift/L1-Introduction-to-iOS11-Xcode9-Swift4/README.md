@@ -1,5 +1,7 @@
 # Introduction to iOS 11, Xcode 9 and Swift 4
 
+[[toc]]
+
 ## Welcome to Developing iOS 11 Apps with Swift
 
 Check out Apple's iOS Dev Center and learn more about Swift. Before you begin, you must know object-oriented programming and have prior programming experience. If you are new to object-oriented programming or are looking for a refresher course to brush up on your skills, [Programming Abstractions](https://itunes.apple.com/us/course/programming-abstractions/id495054099) and [Programming Paradigms](https://itunes.apple.com/us/course/programming-paradigms/id495054064) will help.

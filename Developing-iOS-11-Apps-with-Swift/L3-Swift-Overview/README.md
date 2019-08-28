@@ -1,5 +1,7 @@
 # Swift Overview
 
+[[toc]]
+
 ## Swift Programming Language
 
 Paul Hegarty begins with a demonstration of making Concentration's button layout dynamic. He then reviews the first two lectures and continues diving into Swift.

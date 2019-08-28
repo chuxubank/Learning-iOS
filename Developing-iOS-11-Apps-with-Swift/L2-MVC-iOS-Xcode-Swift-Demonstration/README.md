@@ -1,5 +1,7 @@
 # MVC; iOS, Xcode and Swift Demonstration
 
+[[toc]]
+
 ## MVC
 
 Paul Hegarty explains the Model-View-Controller (MVC) concept. He then continues the Concentration demo: demonstrating the application of MVC to the Concentration Game. 
