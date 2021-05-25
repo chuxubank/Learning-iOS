@@ -1,5 +1,7 @@
 # Drawing in iOS
 
+[[toc]]
+
 ## Drawing
 
 Paul Hegarty covers error handling, special types any and anyobject, and casting. He then introduces views.
