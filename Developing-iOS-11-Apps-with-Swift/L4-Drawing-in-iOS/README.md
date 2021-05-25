@@ -28,7 +28,8 @@ You will always know that can throw because they’ll have the keyword throws on
 
 `func save() throws`
 
-You must put calls to functions like this in a `do { }` block and use the word try to call them. 
+You must put calls to functions like this in a `do { }` block and use the word `try` to call them. 
+
 ``` swift
 do {
 	try context.save()
@@ -37,9 +38,15 @@ do {
 	// usually these are enums that have associated values to get error details
 	throw error // this would re-throw the error (only ok if the method we are in throws) 
 }
-// If you are certain a call will not throw, you can force try with try! ... (rarely)
+```
+If you are certain a call will not throw, you can force `try` with `try!` ... (rarely)
+
+``` swift
 try! context.save() // will crash your program if save() actually throws an error
-// Or you can conditionally try, turning the return into an Optional (which will be nil if fail) ... 
+```
+Or you can conditionally try, turning the return into an Optional (which will be nil if fail) ... 
+
+``` swift
 let x = try? errorProneFunctionThatReturnsAnInt() // x will be Int?
 ```
 
@@ -63,7 +70,9 @@ One of the beauties of Swift is its strong typing, so generally you want to avoi
 
 We already saw it in NSAttributedString.
 
-`let attributes: [NSAttributedStringKey:Any] = ...`
+``` swift
+let attributes: [NSAttributedStringKey:Any] = ...
+```
 
 The attributes of an NSAttributedString can be different things (UIColor, UIFont, etc.). 
 
@@ -73,7 +82,9 @@ Sometimes (rarely) Any will be the type of a function’s argument.
 
 Here’s a UIViewController method that includes a sender (which can be of any type).
 
-`func prepare(for segue: UIStoryboardSegue, sender: Any?)`
+``` swift
+func prepare(for segue: UIStoryboardSegue, sender: Any?)
+```
 
 The sender is the thing that caused this “segue” (i.e., a move to another MVC) to occur. 
 
@@ -94,14 +105,21 @@ But don’t use it for any of your own internal data structure work.
 **How do we use a variable of type Any?**
 
 We can’t use it directly (since we don’t know what type it really is). Instead, we must convert it to another, known type.
-Conversion is done with the as? keyword in Swift.
+
+Conversion is done with the `as?` keyword in Swift.
 This conversion might not be possible, so the conversion generates an Optional.
 You can also check to see if something can be converted with the is keyword (true/false).
-We almost always use as? it with if let ...
-let unknown: Any = ... // we can’t send unknown a message because it’s “typeless” if let foo = unknown as? MyType {
-// foo is of type MyType in here
-// so we can invoke MyType methods or access MyType vars in foo // if unknown was not of type MyType, then we’ll never get here
+
+We almost always use `as?` it with `if let` ...
+
+``` swift
+let unknown: Any = ... // we can’t send unknown a message because it’s “typeless”
+if let foo = unknown as? MyType {
+	// foo is of type MyType in here
+	// so we can invoke MyType methods or access MyType vars in foo
+	// if unknown was not of type MyType, then we’ll never get here
 }
+```
 
 **By the way, casting with as? is not just for Any & AnyObject**
 
